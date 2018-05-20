@@ -41,6 +41,6 @@ public class BankAccount {
             balance-=withdraw_amt;
     }
     public String getAccountInfo(){
-        return "Account number= "+account_number+"\n"+"Name= "+name+"\n"+"Balance= $%.2f"+balance+"\n";
+        return "Account number= "+account_number+"\n"+"Name= "+name+"\n"+"Balance= $"+balance+"\n";
     }
 }

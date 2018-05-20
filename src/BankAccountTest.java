@@ -4,7 +4,7 @@ public class BankAccountTest {
     public static void main(String[] args) {
         String account_number=JOptionPane.showInputDialog("Enter Account number");
         String name=JOptionPane.showInputDialog("Enter name of customer");
-        String option=JOptionPane.showInputDialog("Enter D to deposit %nOR%n Enter W to withdraw");
+        String option=JOptionPane.showInputDialog("Enter D to deposit \nOR\nEnter W to withdraw");
 
         BankAccount customer1=new BankAccount(account_number,name,50.00);
         if(option.equals("D")){
@@ -21,6 +21,7 @@ public class BankAccountTest {
             customer1.withdraw_money(amount);
             customer1.getAccountInfo();
         }
-
+        String amount_message= customer1.getAccountInfo();
+        JOptionPane.showMessageDialog(null,amount_message);
     }
 }
