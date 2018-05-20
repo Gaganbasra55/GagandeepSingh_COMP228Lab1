@@ -6,12 +6,20 @@ public class BankAccountTest {
         String name=JOptionPane.showInputDialog("Enter name of customer");
         String option=JOptionPane.showInputDialog("Enter D to deposit %nOR%n Enter W to withdraw");
 
+        BankAccount customer1=new BankAccount(account_number,name,50.00);
         if(option.equals("D")){
             String deposit=JOptionPane.showInputDialog("Enter Deposit Amount");
             double amount= Double.parseDouble(deposit);
 
-            
+            customer1.deposit_money(amount);
+            customer1.getAccountInfo();
+        }
+        if(option.equals("W")){
+            String deposit=JOptionPane.showInputDialog("Enter Deposit Amount");
+            double amount= Double.parseDouble(deposit);
 
+            customer1.deposit_money(amount);
+            customer1.getAccountInfo();
         }
 
     }
