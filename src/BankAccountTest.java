@@ -15,10 +15,10 @@ public class BankAccountTest {
             customer1.getAccountInfo();
         }
         if(option.equals("W")){
-            String deposit=JOptionPane.showInputDialog("Enter Deposit Amount");
-            double amount= Double.parseDouble(deposit);
+            String withdraw=JOptionPane.showInputDialog("Enter Withdraw Amount");
+            double amount= Double.parseDouble(withdraw);
 
-            customer1.deposit_money(amount);
+            customer1.withdraw_money(amount);
             customer1.getAccountInfo();
         }
 
