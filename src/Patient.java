@@ -7,7 +7,7 @@ public class Patient {
     private String province;
     private String postal_code;
 
-    public Patient(String patient_id, String first_name, String last_name, String address, String city, String porvince, String postal_code) {
+    public Patient(String patient_id, String first_name, String last_name, String address, String city, String province, String postal_code) {
         this.patient_id = patient_id;
         this.first_name = first_name;
         this.last_name = last_name;
@@ -61,7 +61,7 @@ public class Patient {
         return province;
     }
 
-    public void setProvince(String porvince) {
+    public void setProvince(String province) {
         this.province = province;
     }
 
@@ -74,6 +74,6 @@ public class Patient {
     }
 
     public String getPatientInfo() {
-        return "Patient ID= " + patient_id + "%n" + "First name= " + first_name + "%n" + "Last name= " + last_name + "%n" + "Address= " + address + "%n" + "City= " + city + "%n" + "Province= " + province + "%n" + "Postal Code= " + postal_code + "%n";
+        return "Patient ID= " + patient_id + "\n" + "First name= " + first_name + "\n" + "Last name= " + last_name + "\n" + "Address= " + address + "\n" + "City= " + city + "\n" + "Province= " + province + "\n" + "Postal Code= " + postal_code + "\n";
     }
 }
