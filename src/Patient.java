@@ -4,7 +4,7 @@ public class Patient {
     private String last_name;
     private String address;
     private String city;
-    private String porvince;
+    private String province;
     private String postal_code;
 
     public Patient(String patient_id, String first_name, String last_name, String address, String city, String porvince, String postal_code) {
@@ -13,7 +13,7 @@ public class Patient {
         this.last_name = last_name;
         this.address = address;
         this.city = city;
-        this.porvince = porvince;
+        this.province = province;
         this.postal_code = postal_code;
     }
 
@@ -57,12 +57,12 @@ public class Patient {
         this.city = city;
     }
 
-    public String getPorvince() {
-        return porvince;
+    public String getProvince() {
+        return province;
     }
 
-    public void setPorvince(String porvince) {
-        this.porvince = porvince;
+    public void setProvince(String porvince) {
+        this.province = province;
     }
 
     public String getPostal_code() {
@@ -72,5 +72,8 @@ public class Patient {
     public void setPostal_code(String postal_code) {
         this.postal_code = postal_code;
     }
-    
+
+    public String getPatientInfo() {
+        return "Patient ID= " + patient_id + "%n" + "First name= " + first_name + "%n" + "Last name= " + last_name + "%n" + "Address= " + address + "%n" + "City= " + city + "%n" + "Province= " + province + "%n" + "Postal Code= " + postal_code + "%n";
+    }
 }
