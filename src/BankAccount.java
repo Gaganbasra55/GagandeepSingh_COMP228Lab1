@@ -40,4 +40,7 @@ public class BankAccount {
         if(withdraw_amt>0.00&&withdraw_amt<=balance)
             balance-=withdraw_amt;
     }
+    public String getAccountInfo(){
+        return "Account number= "+account_number+"\n"+"Name= "+name+"\n"+"Balance= $%.2f"+balance+"\n";
+    }
 }
