@@ -12,6 +12,8 @@ public class PatientTest {
 
         Patient patient_test=new Patient(patient_id,first_name_,last_name,address,city,province,postal_code);
 
+        //show output message
+
         String patient_message= patient_test.getPatientInfo();
         JOptionPane.showMessageDialog(null,patient_message);
     }

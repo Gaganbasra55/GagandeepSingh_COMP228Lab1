@@ -1,4 +1,7 @@
 public class Patient {
+
+    // variables
+
     private String patient_id;
     private String first_name;
     private String last_name;
@@ -6,6 +9,8 @@ public class Patient {
     private String city;
     private String province;
     private String postal_code;
+
+    //constructor
 
     public Patient(String patient_id, String first_name, String last_name, String address, String city, String province, String postal_code) {
         this.patient_id = patient_id;
@@ -16,6 +21,8 @@ public class Patient {
         this.province = province;
         this.postal_code = postal_code;
     }
+
+    //getter and setter methods
 
     public String getPatient_id() {
         return patient_id;
@@ -72,6 +79,8 @@ public class Patient {
     public void setPostal_code(String postal_code) {
         this.postal_code = postal_code;
     }
+
+    //return patient information method 
 
     public String getPatientInfo() {
         return "Patient ID= " + patient_id + "\n" + "First name= " + first_name + "\n" + "Last name= " + last_name + "\n" + "Address= " + address + "\n" + "City= " + city + "\n" + "Province= " + province + "\n" + "Postal Code= " + postal_code + "\n";

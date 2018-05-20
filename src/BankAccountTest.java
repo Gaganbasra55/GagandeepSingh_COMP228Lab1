@@ -8,7 +8,7 @@ public class BankAccountTest {
 
         BankAccount customer1=new BankAccount(account_number,name,50.00);
 
-        //if user enter D 
+        //if user enter D
 
         if(option.equals("D")){
             String deposit=JOptionPane.showInputDialog("Enter Deposit Amount");
