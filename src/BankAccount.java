@@ -32,4 +32,12 @@ public class BankAccount {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+    public void deposit_money(double deposit_amt){
+        if(deposit_amt>0.00)
+            balance+=deposit_amt;
+    }
+    public void withdraw_money(double withdraw_amt){
+        if(withdraw_amt>0.00&&withdraw_amt<=balance)
+            balance-=withdraw_amt;
+    }
 }
