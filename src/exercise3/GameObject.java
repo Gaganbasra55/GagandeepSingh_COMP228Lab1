@@ -39,4 +39,26 @@ public class GameObject {
     public double getRotation() {
         return rotation;
     }
+
+
+    public void setCenterX(double centerX) {
+        this.centerX = centerX;
+    }
+
+    public void setCenterY(double centerY) {
+        this.centerY = centerY;
+    }
+
+    public void setVelocity(double velocity) {
+        this.velocity = velocity;
+    }
+
+    public void setState(boolean state) {
+        this.state = state;
+    }
+
+    public void setRotation(double rotation) {
+        this.rotation = rotation;
+    }
+
 }

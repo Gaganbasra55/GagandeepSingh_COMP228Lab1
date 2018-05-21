@@ -27,30 +27,37 @@ public class Patient {
     //getter and setter methods
 
     public String getPatient_id() {
+
         return patient_id;
     }
 
     public void setPatient_id(String patient_id) {
+
         this.patient_id = patient_id;
     }
 
     public String getFirst_name() {
+
         return first_name;
     }
 
     public void setFirst_name(String first_name) {
+
         this.first_name = first_name;
     }
 
     public String getLast_name() {
+
         return last_name;
     }
 
     public void setLast_name(String last_name) {
+
         this.last_name = last_name;
     }
 
     public String getAddress() {
+
         return address;
     }
 
@@ -85,6 +92,6 @@ public class Patient {
     //return patient information method
 
     public String getPatientInfo() {
-        return "exercise1.Patient ID= " + patient_id + "\n" + "First name= " + first_name + "\n" + "Last name= " + last_name + "\n" + "Address= " + address + "\n" + "City= " + city + "\n" + "Province= " + province + "\n" + "Postal Code= " + postal_code + "\n";
+        return "exercise1.Patient ID= " + getPatient_id() + "\n" + "First name= " + getFirst_name() + "\n" + "Last name= " + getLast_name() + "\n" + "Address= " + getAddress() + "\n" + "City= " + getCity() + "\n" + "Province= " + getProvince() + "\n" + "Postal Code= " + getPostal_code() + "\n";
     }
 }
