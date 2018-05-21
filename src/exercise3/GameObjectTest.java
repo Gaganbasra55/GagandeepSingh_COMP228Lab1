@@ -14,6 +14,8 @@ public class GameObjectTest {
 
         GameObject object1 = new GameObject(centerX, centerY, velocity, status, rotation);
 
+        //show result message
+
         String game_message=object1.getGameObject();
         JOptionPane.showMessageDialog(null,game_message);
 
