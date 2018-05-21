@@ -1,5 +1,7 @@
 package exercise3;
 
+import javax.swing.*;
+
 public class GameObject {
 
     //Instance Variables
@@ -60,5 +62,10 @@ public class GameObject {
     public void setRotation(double rotation) {
         this.rotation = rotation;
     }
-
+    //Method
+    public String getGameObject() {
+        return "center: (%s,%s)"+getCenterX()+getCenterY()+"\n"+"velocity= "+getVelocity()+"\n"+"state= "+isState()+"\n"+"rotation= "+getRotation();
+    }
+        /*String message = String.format("The values provided are:%n Center: (%s,%s);%n Velocity: %s;%n Alive: %s;%n Rotation: %s;",getObjectCenterX(), getObjectCenterY(), getObjectVelocity(), getObjectAlive(), getObjectRotation());
+        JOptionPane.showMessageDialog(null, message);*/
 }
