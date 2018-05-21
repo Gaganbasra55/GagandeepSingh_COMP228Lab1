@@ -1,3 +1,5 @@
+package exercise1;
+
 public class Patient {
 
     // variables
@@ -80,9 +82,9 @@ public class Patient {
         this.postal_code = postal_code;
     }
 
-    //return patient information method 
+    //return patient information method
 
     public String getPatientInfo() {
-        return "Patient ID= " + patient_id + "\n" + "First name= " + first_name + "\n" + "Last name= " + last_name + "\n" + "Address= " + address + "\n" + "City= " + city + "\n" + "Province= " + province + "\n" + "Postal Code= " + postal_code + "\n";
+        return "exercise1.Patient ID= " + patient_id + "\n" + "First name= " + first_name + "\n" + "Last name= " + last_name + "\n" + "Address= " + address + "\n" + "City= " + city + "\n" + "Province= " + province + "\n" + "Postal Code= " + postal_code + "\n";
     }
 }

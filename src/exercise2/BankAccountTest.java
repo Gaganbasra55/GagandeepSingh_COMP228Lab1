@@ -1,3 +1,5 @@
+package exercise2;
+
 import javax.swing.*;
 
 public class BankAccountTest {
