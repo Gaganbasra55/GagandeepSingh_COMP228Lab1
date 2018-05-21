@@ -64,8 +64,7 @@ public class GameObject {
     }
     //Method
     public String getGameObject() {
-        return "center: (%s,%s)"+getCenterX()+getCenterY()+"\n"+"velocity= "+getVelocity()+"\n"+"state= "+isState()+"\n"+"rotation= "+getRotation();
+        return "center:("+getCenterX()+","+getCenterY()+")\n"+"velocity= "+getVelocity()+"\n"+"state= "+isState()+"\n"+"rotation= "+getRotation();
     }
-        /*String message = String.format("The values provided are:%n Center: (%s,%s);%n Velocity: %s;%n Alive: %s;%n Rotation: %s;",getObjectCenterX(), getObjectCenterY(), getObjectVelocity(), getObjectAlive(), getObjectRotation());
-        JOptionPane.showMessageDialog(null, message);*/
+
 }
