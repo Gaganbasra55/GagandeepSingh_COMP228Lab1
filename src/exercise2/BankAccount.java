@@ -62,6 +62,6 @@ public class BankAccount {
     //get account information
 
     public String getAccountInfo(){
-        return "Account number= "+account_number+"\n"+"Name= "+name+"\n"+"Balance= $"+balance+"\n";
+        return "Account number= "+getAccount_number()+"\n"+"Name= "+getName()+"\n"+"Balance= $"+getBalance()+"\n";
     }
 }
